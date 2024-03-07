@@ -1,0 +1,34 @@
+.img-describe{
+    width: 500px;
+}
+
+.img-comics{
+    border: 2px solid #000;
+}
+
+.comics-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    height: auto;
+    overflow: auto;
+    gap: 0.5rem;
+}
+
+.container-comic{
+    overflow: hidden;
+    position: relative;
+}
+
+.img-comics:hover{
+    transform: scale(1.1);
+    filter: grayscale(0.9);
+    transition: all 0.4s ease-in-out;
+}
+
+@media only screen and (max-width: 760px){
+    .img-describe{
+        width: 100%;
+    }
+}
